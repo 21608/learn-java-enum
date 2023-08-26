@@ -2,10 +2,10 @@ package basic;
 
 public enum HowToUseEnum {
     JANUARY("1月") {
-        public String oneWord(int param) { return param + "度" + " cold"; }
+        public String setTemperature(int param) { return param + "度" + " cold"; }
     },
     JULY("7月") {
-        public String oneWord(int param) { return param + "度" + " hot"; }
+        public String setTemperature(int param) { return param + "度" + " hot"; }
     };
 
     private final String month;
@@ -13,5 +13,5 @@ public enum HowToUseEnum {
 
     @Override public String toString() { return month; }
 
-    public abstract String oneWord(int param);
+    public abstract String setTemperature(int param);
 }
