@@ -1,6 +1,6 @@
 package basic;
 
-public enum HowToUseEnum {
+public enum HowToUseEnum implements InterfaceEnum{
     JANUARY("1月") {
         public String setTemperature(int param) { return param + "度" + " cold"; }
     },
@@ -12,6 +12,4 @@ public enum HowToUseEnum {
     HowToUseEnum(String month) {this.month = month;}
 
     @Override public String toString() { return month; }
-
-    public abstract String setTemperature(int param);
 }
